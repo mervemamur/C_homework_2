@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+	int sayi;
+	printf("Basamak degerlerini ogrenmek istediginiz 4 haneli sayiyi girin	:");
+	scanf("%d",&sayi);
+	int binlik,yuzluk,onluk,birlik;
+	binlik=sayi/1000;
+	printf("%d tane binlik\n",binlik);
+	yuzluk=(sayi%1000)/100;
+	printf("%d tane yuzluk\n",yuzluk);
+	onluk=((sayi%1000)%100)/10;
+	printf("%d tane onluk\n",onluk);
+	birlik=((sayi%1000)%100)%10;
+	printf("%d tane birlik sayi vardir...\n",birlik);
+
+
+}
